@@ -1,0 +1,320 @@
+/*
+Theme Name:   Astra Child
+ Description:  Astra Child Theme
+ Author:       Noémie Dufourd
+ Author URI:   https://noemie-dufourd-portfolio.fr;
+ Template:     astra
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+/*-----------------------------*\
+GENERAL
+\*-----------------------------*/
+.entry-content p {
+	margin: 0;
+}
+
+.shop-nav + span {
+	display: block;
+	text-align: center;
+	padding-top: 2rem;
+}
+
+.home .shop-nav + span {
+	display: none;
+}
+
+/*-----------------------------*\
+HEADER
+\*-----------------------------*/
+.site-title a:link, .site-title a:visited, .site-title a:hover, .site-title a:active {
+	color: #574a39;
+}
+
+@media only screen and (min-width:1024px) {
+	.carticon, .accounticon {
+		background-repeat: no-repeat;
+		background-position: 50% 30%;
+		padding-top: 2rem;
+	}
+	
+	.carticon {
+		background-image: url('https://linen.noemie-dufourd-portfolio.fr/wp-content/uploads/2020/09/cart-button.png');
+	}
+	
+	.accounticon {
+		background-image: url('https://linen.noemie-dufourd-portfolio.fr/wp-content/uploads/2020/09/account-button.png');
+	}
+}
+/*-----------------------------*\
+DEUXIÈME MENU
+\*-----------------------------*/
+.shop-nav {
+	display:none;
+}
+
+@media only screen and (min-width:600px) {
+	.shop-nav {
+	display: block;
+	border-bottom: dotted 1px #574a39;
+}
+
+.shop-nav .nav__menu {
+	list-style: none;
+	text-align: center;
+	margin: 0;
+}
+
+.shop-nav .nav__submenu {
+	list-style: none;
+	display: none;
+	position: absolute;
+	top: 4rem;
+	background-color: #f5f3ef;
+	color: #fff;
+	border: solid 1px #574a39;
+}
+
+.shop-nav li {
+	display: inline-block;
+	padding: 2rem;
+	position: relative;
+}
+
+.shop-nav li:hover > .nav__submenu {
+	display: flex;
+	flex-direction: column;
+	width: 20rem;
+	z-index: 100;
+}
+
+.nav__menu--rotate:hover .menu-arrow {
+	transform: rotate(90deg);
+}
+
+.menu-arrow:hover {
+	transform: rotate(90deg);
+}
+}
+
+/*-----------------------------*\
+FOOTER
+\*-----------------------------*/
+footer {
+		background-color: #574a39;
+		color: #fff;
+	}
+
+footer a:link, footer a:visited {
+	color: #fff;
+	text-decoration: underline;
+}
+
+footer a:hover, footer a:active {
+	font-weight: 800;
+	color: #fff;
+}
+
+footer p {
+	margin-bottom: .5rem;
+}
+
+footer hr {
+	color: #fff;
+}
+
+.footer__linen {
+	font-size: 2rem;
+	font-style: italic;
+}
+
+.footer-title {
+	font-size: 1.3rem;
+	font-weight: 800;
+}
+
+.footer__container {
+	display: flex; 
+	flex-direction: column;
+	align-items: center;
+	padding-top: 1rem;
+}
+
+.footer__top {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.footer__panel {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	margin-top: 1.5rem;
+}
+
+.footer__bottom {
+	padding: 1rem 0;
+}
+
+.footer__follow {
+	margin-top: 1.5rem;
+}
+
+.follow-icons {
+	background-color: #fff;
+	margin: 0 2rem;
+	border-radius: 20px;
+}
+
+@media only screen and (min-width:1024px) {
+	footer hr {
+		display: none;
+	}
+	
+	.footer__top {
+		flex-flow: row wrap;
+	}
+	
+	.footer__panel {
+		margin-top: 0;
+	}
+}
+/*-----------------------------*\
+PROMOTION
+\*-----------------------------*/
+.promo__panel {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.promo__title {
+	font-size: 1.5rem;
+	font-weight: 800;
+	color: #5662aa;
+	margin-bottom: 1rem;
+}
+
+.promo__description {
+	font-size: 1.2rem;
+	font-weight: 600;
+	color: #5662aa;
+	margin-bottom: 1rem;
+}
+
+.promo__utilisation {
+	font-weight: 600;
+	text-align: center;
+	text-transform: italic;
+}
+
+.promo__newsletter-link {
+	font-weight: 600;
+	font-style: italic;
+}
+
+.promo__newsletter-link--accentued {
+	font-size: 1.5rem;
+	font-weight: 300;
+	font-style: italic;
+	color: #5662aa;
+	text-decoration: underline;
+}
+
+/*-----------------------------*\
+INSCRIPTION NEWSLETTER
+\*-----------------------------*/
+.mc4wp-form-345 .mc4wp-form-fields {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.mc4wp-form-345 label, .mc4wp-form-345 input {
+	margin-bottom: 3rem;
+	text-align: center;
+	color: #574a39;
+}
+
+/*-----------------------------*\
+PLUGIN PERSONNALISÉ
+\*-----------------------------*/
+.nono_shortcode_container {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100;
+	justify-content: center;
+	align-items: center;
+	background-color: #5662aa;
+	color: #fff;
+	border-radius: 2rem;
+}
+
+.nono_shortcode_title {
+	font-size: 1.5rem;
+}
+
+.nono_shortcode_title, .nono_shortcode_button {
+	margin: 1.4rem;
+}
+
+.nono_shortcode_text {
+	color: #fff;
+}
+
+/*-----------------------------*\
+Page 404
+\*-----------------------------*/
+.error__container {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	justify-content: space-evenly;
+}
+
+/*-----------------------------*\
+REVIEW
+\*-----------------------------*/
+.wpcr3_respond_1, .wpcr3_in_content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/*-----------------------------*\
+POST GRID HOMEPAGE
+\*-----------------------------*/
+.display-posts-listing.grid {
+	display: grid;
+	grid-gap: 16px;
+}
+
+.display-posts-listing.grid .title {
+	display: block;
+}
+
+.display-posts-listing.grid img { 
+	display: block; 
+	max-width: 100%; 
+	height: auto; 
+}
+
+@media (min-width: 600px) {
+	.display-posts-listing.grid {
+		grid-template-columns: repeat( 2, 1fr );
+	}
+}
+
+@media (min-width: 1024px) {
+	.display-posts-listing.grid {
+		grid-template-columns: repeat( 3, 1fr );
+	}
+}
