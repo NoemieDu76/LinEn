@@ -216,19 +216,6 @@ PROMOTION
 	text-transform: italic;
 }
 
-.promo__newsletter-link {
-	font-weight: 600;
-	font-style: italic;
-}
-
-.promo__newsletter-link--accentued {
-	font-size: 1.5rem;
-	font-weight: 300;
-	font-style: italic;
-	color: #5662aa;
-	text-decoration: underline;
-}
-
 /*-----------------------------*\
 INSCRIPTION NEWSLETTER
 \*-----------------------------*/
@@ -242,6 +229,14 @@ INSCRIPTION NEWSLETTER
 	margin-bottom: 3rem;
 	text-align: center;
 	color: #574a39;
+}
+
+.mc4wp-form-345 label {
+	color: #574a39;
+}
+
+.mc4wp-form-345 input {
+	color: #fff;
 }
 
 /*-----------------------------*\
